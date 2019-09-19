@@ -57,10 +57,11 @@
 </script>
 
   <meta name="description" content="1console.log(&amp;quot;hello&amp;quot;)">
+<meta name="keywords" content="思考, 记录, 技术, IT, 前端, 后端, 分享, javascript, typescript, java, python, go">
 <meta property="og:type" content="article">
 <meta property="og:title" content="about">
 <meta property="og:url" content="https://guaijie.github.io/2019/09/16/about/index.html">
-<meta property="og:site_name" content="tech">
+<meta property="og:site_name">
 <meta property="og:description" content="1console.log(&amp;quot;hello&amp;quot;)">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-09-16T06:38:30.164Z">
@@ -81,7 +82,7 @@
   };
 </script>
 
-  <title>about | tech</title>
+  <title>about | </title>
   
 
 
@@ -135,14 +136,14 @@
   <div class="site-meta custom-logo">
       <div class="site-meta-headline">
         <a>
-          <img class="custom-logo-image" src="/images/logo.svg" alt="tech">
+          <img class="custom-logo-image" src="/images/logo.svg" alt="">
         </a>
       </div>
 
     <div>
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">tech</span>
+        <span class="site-title"></span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -293,7 +294,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="tech">
+      <meta itemprop="name" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">about
@@ -361,6 +362,12 @@
       <footer class="post-footer">
 
         
+  <div class="post-widgets">
+    <div class="wp_rating">
+      <div id="wpac-rating"></div>
+    </div>
+  
+  </div>
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
@@ -391,6 +398,9 @@
 
           </div>
           
+    
+    <div class="comments" id="gitalk-container"></div>
+  
 
         </div>
           
@@ -473,6 +483,9 @@
   <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
   <span class="post-meta-divider">|</span>
   <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.4.0</div>
+  <div class="addthis_inline_share_toolbox">
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d82daf86738763d" async="async"></script>
+  </div>
 
         
 
@@ -519,6 +532,26 @@
 
 
 
+  <script>
+  if (CONFIG.page.isPost) {
+    wpac_init = window.wpac_init || [];
+    wpac_init.push({
+      widget: 'Rating',
+      id: 20995,
+      el: 'wpac-rating',
+      color: 'fc6423'
+    });
+    (function() {
+      if ('WIDGETPACK_LOADED' in window) return;
+      WIDGETPACK_LOADED = true;
+      var mc = document.createElement('script');
+      mc.type = 'text/javascript';
+      mc.async = true;
+      mc.src = '//embed.widgetpack.com/widget.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+    })();
+  }
+  </script>
 
 
 
@@ -542,6 +575,25 @@
   
 
   
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID: '288abbd316406583a92e',
+      clientSecret: '2a76b7d5f5c97fbba29eb9d6c1060afbfd0c3fc7',
+      repo: 'guaijie.github.io',
+      owner: 'guaijie',
+      admin: ['guaijie'],
+      id: '1bb4c05f0d4b7ca2db5b067cc523fdb7',
+        language: 'zh-CN',
+      
+      distractionFreeMode: 'true'
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+</script>
 
 </body>
 </html>
